@@ -1,0 +1,73 @@
+{	
+	"monsters":[
+		{
+			"id": 1,
+			"name": "Easy Skeleton",
+			"icon": 1,
+			"isBoss": 0,
+			"experienceGain": 1,
+			"type": 0,
+			"specialLoot":[],
+			"skills":[1,2,3,4],
+			"main": 
+					{
+						"str": 0,
+						"con": 2,
+						"dex": 1,
+						"int": 5,
+						"lck": 10
+					}
+				,
+			"sub": 
+					{
+						"hp": 0,
+						"armor": 2,
+						"dodge": 1,
+						"speed": 5,
+						"physDmg": 10,
+						"critDmg": 10,
+						"magicDmg": 10,
+						"critMagic": 10,
+						"critChance": 10,
+						"fireRes": 10,
+						"iceRes": 10,
+						"lightRes": 10,
+						"weight":1
+					}
+		},{
+			"id": 2,
+			"name": "Ranged Skeleton",
+			"icon": 1,
+			"isBoss": 0,
+			"experienceGain": 2,
+			"type": 1,
+			"specialLoot":[],
+			"skills":[1,2,3,4],
+			"main": 
+					{
+						"str": 0,
+						"con": 2,
+						"dex": 1,
+						"int": 5,
+						"lck": 10
+					}
+				,
+			"sub": 
+					{
+						"hp": 0,
+						"armor": 2,
+						"dodge": 1,
+						"speed": 5,
+						"physDmg": 10,
+						"critDmg": 10,
+						"magicDmg": 10,
+						"critMagic": 10,
+						"critChance": 10,
+						"fireRes": 10,
+						"iceRes": 10,
+						"lightRes": 10,
+						"weight":1
+					}
+		}
+	]
+}

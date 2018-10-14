@@ -1,0 +1,33 @@
+{	
+	"characterCreates":[
+		{
+			"rarity": 0,
+			"startingPoints": 10,
+			"growth":[1.2,2,3,4,5]
+		},{
+			"rarity": 1,
+			"startingPoints": 10,
+			"growth":[1.2,2,3,4,5]
+		},{
+			"rarity": 2,
+			"startingPoints": 10,
+			"growth":[1.2,2,3,4,5]
+		},{
+			"rarity": 3,
+			"startingPoints": 10,
+			"growth":[1.2,2,3,4,5]
+		},{
+			"rarity": 4,
+			"startingPoints": 10,
+			"growth":[1.2,2,3,4,5]
+		},{
+			"rarity": 5,
+			"startingPoints": 10,
+			"growth":[1.2,2,3,4,5]
+		},{
+			"rarity": 6,
+			"startingPoints": 20,
+			"growth":[1.2,2,3,4,5]
+		}		
+	]
+}

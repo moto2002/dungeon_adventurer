@@ -1,0 +1,17 @@
+{	
+	"dungeons":[
+		{
+			"name": "Heulende Festung",
+			"minLvl": 1,
+			"maxLvl":5,
+			"possibleMonstersIds":[1,2],
+			"bossId":1
+		},{
+			"name": "Tiefe Schlucht",
+			"minLvl": 4,
+			"maxLvl":8,
+			"possibleMonstersIds":[2],
+			"bossId":2
+		}	
+	]
+}

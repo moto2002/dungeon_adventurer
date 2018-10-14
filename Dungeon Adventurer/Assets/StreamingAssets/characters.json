@@ -1,0 +1,92 @@
+{	
+	"characters":[
+		{
+			"name": "Jhur Shagur",
+			"experience":123,
+			"rarity":4,
+			"race":1,
+			"fightClass":1,
+			"position":1,
+			"items":[{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},
+					{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},					
+					{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},					
+					{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},					
+					{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},
+					{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},
+					null,
+					null,
+					null,
+					null],
+			"skills":[1,2,3,4],
+			"main": 
+					{
+						"str": 0,
+						"con": 2,
+						"dex": 1,
+						"int": 5,
+						"lck": 10
+					}
+				,
+			"sub": 
+					{
+						"hp": 0,
+						"armor": 2,
+						"dodge": 1,
+						"speed": 5,
+						"physDmg": 10,
+						"critDmg": 10,
+						"magicDmg": 10,
+						"critMagic": 10,
+						"critChance": 10,
+						"fireRes": 10,
+						"iceRes": 10,
+						"lightRes": 10,
+						"weight":1
+					}
+		},		
+		{
+			"name": "Khan Shan",
+			"experience":123,
+			"rarity":3,
+			"race":2,
+			"fightClass":2,
+			"position":1,
+			"items":[{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},
+					{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},					
+					{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},					
+					{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},					
+					{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},
+					{"id": 1,"name": "Blitzender Dolch","type": 1,"icon": 2,"rarity":4,"smithed":1,"main":{"str": 0,"con": 2,	"dex": 1,"int": 5,"lck": 10},"sub":{"hp": 0,"armor": 2,"dodge": 1,"speed": 5,"physDmg": 10,"critDmg": 10,"magicDmg": 10,"critMagic": 10,"critChance": 10,"fireRes": 10,"iceRes": 10,"lightRes": 10,"weight":1}},
+					null,
+					null,
+					null,
+					null],
+			"skills":[1,2,3,4],
+			"main": 
+					{
+						"str": 0,
+						"con": 2,
+						"dex": 1,
+						"intel": 5,
+						"lck": 10
+					}
+				,
+			"sub": 
+					{
+						"hp": 0,
+						"armor": 2,
+						"dodge": 1,
+						"speed": 5,
+						"physDmg": 10,
+						"critDmg": 10,
+						"magicDmg": 10,
+						"critMagic": 10,
+						"critChance": 10,
+						"fireRes": 10,
+						"iceRes": 10,
+						"lightRes": 10,
+						"weight":1
+					}
+		}
+	]
+}

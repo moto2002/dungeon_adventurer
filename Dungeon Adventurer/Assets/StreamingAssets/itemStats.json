@@ -1,0 +1,47 @@
+{	
+	"itemCreates":[
+		{
+			"rarity": 0,
+			"mainRange": 1,
+			"mainAmount":1,
+			"subRange":2,
+			"subAmount":0
+		},{
+			"rarity": 1,
+			"mainRange": 1,
+			"mainAmount":1,
+			"subRange":2,
+			"subAmount":1
+		},{
+			"rarity": 2,
+			"mainRange": 1,
+			"mainAmount":1,
+			"subRange":2,
+			"subAmount":2
+		},{
+			"rarity": 3,
+			"mainRange": 1,
+			"mainAmount":2,
+			"subRange":2,
+			"subAmount":2
+		},{
+			"rarity": 4,
+			"mainRange": 1,
+			"mainAmount":2,
+			"subRange":2,
+			"subAmount":2
+		},{
+			"rarity": 5,
+			"mainRange": 1,
+			"mainAmount":2,
+			"subRange":2,
+			"subAmount":3
+		},{
+			"rarity": 6,
+			"mainRange": 1,
+			"mainAmount":3,
+			"subRange":2,
+			"subAmount":3
+		}		
+	]
+}
