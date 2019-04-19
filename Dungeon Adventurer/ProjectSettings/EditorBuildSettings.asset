@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: 726ffbc6ee9bfaa4fb37a1770944cfee
   - enabled: 1
-    path: Assets/Scenes/View_Inventory.unity
+    path: Assets/Scenes/View_Characters.unity
     guid: 630bbce696ed42e4f83b8417f03e0e37
   - enabled: 1
     path: Assets/Scenes/View_Dungeon.unity
@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/View_Taverne.unity
     guid: 366ea14c1e96be84ab0b0d9d1fdc3849
+  - enabled: 1
+    path: Assets/Scenes/View_Details.unity
+    guid: 94cd34aa219508147b1bc7d8c9d0d968
+  - enabled: 1
+    path: Assets/Scenes/View_Battle.unity
+    guid: 4a160f93ce840ea45a6a70a40a3f14f7
   m_configObjects: {}

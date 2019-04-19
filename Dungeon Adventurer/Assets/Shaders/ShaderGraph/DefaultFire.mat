@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultFire
+  m_Shader: {fileID: 4800000, guid: bb7506dc1964b1741975f35f14d5fe37, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_B6AE5EB:
+        m_Texture: {fileID: 2800000, guid: 6322ba655e300024b9e80587cfe92e57, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: dc1f8f79e212b8d44af4b43648c8491c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_12BDD612: 0.1
+    - Vector1_2950182A: 2
+    - Vector1_C6A1B47: 0.1
+    - Vector1_FD1545F9: 0.2
+    m_Colors:
+    - Color_4D1A5ECB: {r: 60.41879, g: 16.765423, b: 0, a: 1}
+    - Vector2_73FB1044: {r: 0, g: -0.2, b: 0, a: 0}
+    - Vector2_DB9B8326: {r: -0.2, g: -3, b: 0, a: 0}

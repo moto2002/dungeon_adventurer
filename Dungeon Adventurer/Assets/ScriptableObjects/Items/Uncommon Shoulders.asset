@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Uncommon Shoulders
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  id: 6
+  itemName: Uncommon Shoulders
+  type: 3
+  icon: {fileID: 21300000, guid: f126324fd2486a641842ea5a8244c2d1, type: 3}
+  rarity: 1
+  smithed: 0
+  main:
+  - stat: 0
+    value: 2
+  - stat: 1
+    value: 4
+  sub: []
