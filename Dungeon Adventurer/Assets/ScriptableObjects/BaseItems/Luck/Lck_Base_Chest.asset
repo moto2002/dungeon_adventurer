@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae7adc6c82de0c4098c0e1550012088, type: 3}
+  m_Name: Lck_Base_Chest
+  m_EditorClassIdentifier: 
+  id: 64
+  type: 4
+  icons:
+  - {fileID: 21300000, guid: 0e54d218159025740910740532a7df15, type: 3}
+  - {fileID: 21300000, guid: 64905e942b1291144b30a350aeafb304, type: 3}
+  - {fileID: 21300000, guid: 8ce1e9f2bc26dd14b920feb393f2b81d, type: 3}
+  - {fileID: 21300000, guid: aab06b2072c550f4e98d77f47e573aec, type: 3}
+  - {fileID: 21300000, guid: ac25cf8b93ddf1541ba231fce354d782, type: 3}
+  statFocus:
+  - {fileID: 11400000, guid: b0afc02833333224993306603706ccfe, type: 2}
+  - {fileID: 11400000, guid: c7c87457a04eff74b8c669f77f1b34e9, type: 2}
+  - {fileID: 11400000, guid: cb3a355b294f7444382f6082938f35c4, type: 2}
+  - {fileID: 11400000, guid: 9b13954e800064347a3efb45cb9bf5f6, type: 2}

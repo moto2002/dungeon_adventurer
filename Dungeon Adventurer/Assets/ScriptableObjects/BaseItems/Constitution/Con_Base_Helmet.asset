@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae7adc6c82de0c4098c0e1550012088, type: 3}
+  m_Name: Con_Base_Helmet
+  m_EditorClassIdentifier: 
+  id: 6
+  type: 6
+  icons:
+  - {fileID: 21300000, guid: 88d60f080938e0b488ab218381beb404, type: 3}
+  - {fileID: 21300000, guid: d5ea0119fe43ea54da1ef5dad1b8683d, type: 3}
+  - {fileID: 21300000, guid: 068112d9a7717214fae845bd7be4fcca, type: 3}
+  - {fileID: 21300000, guid: 3ec8b369d89e8ca41ac1c01bec61e91d, type: 3}
+  - {fileID: 21300000, guid: b29cae68246f06f498a0ee773f09dfb6, type: 3}
+  statFocus:
+  - {fileID: 11400000, guid: ae0593ca71bc1394d9e873c2731a67d2, type: 2}
+  - {fileID: 11400000, guid: ef696720dda9f24429a0eb3d001307d8, type: 2}
+  - {fileID: 11400000, guid: 32a011d2caafe324f979daf60730eb28, type: 2}
+  - {fileID: 11400000, guid: 1483b59a2b9e89440b5cb7fbc6c56bd3, type: 2}

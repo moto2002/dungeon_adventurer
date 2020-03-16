@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aa4d584af554124a8ef2097fdbe4ad5, type: 3}
+  m_Name: Lck_Base_Weapon
+  m_EditorClassIdentifier: 
+  id: 69
+  type: 10
+  icons:
+  - {fileID: 21300000, guid: 1b9631223732b6143a29d063fe665bbb, type: 3}
+  - {fileID: 21300000, guid: 145fd2d6289d0544cb231e75aafdf9f4, type: 3}
+  - {fileID: 21300000, guid: 70ee954fcfaa7c540bdb8f19bbd151a1, type: 3}
+  - {fileID: 21300000, guid: 300b7eb1142888d45a7bd9d29112619e, type: 3}
+  - {fileID: 21300000, guid: cfcf9f9a29e381646aba59867ee7a3d9, type: 3}
+  - {fileID: 21300000, guid: 960fef32214526d46ba73d93e52a6435, type: 3}
+  - {fileID: 21300000, guid: adcaf5b224d3bb141bee6274c369ba1c, type: 3}
+  statFocus:
+  - {fileID: 11400000, guid: b0afc02833333224993306603706ccfe, type: 2}
+  - {fileID: 11400000, guid: c7c87457a04eff74b8c669f77f1b34e9, type: 2}
+  - {fileID: 11400000, guid: cb3a355b294f7444382f6082938f35c4, type: 2}
+  - {fileID: 11400000, guid: 9b13954e800064347a3efb45cb9bf5f6, type: 2}
+  MinDamage: 1
+  MaxDamage: 2
+  MinDamageIncrease: 1
+  MaxDamageIncrease: 3
+  WeaponType: 0

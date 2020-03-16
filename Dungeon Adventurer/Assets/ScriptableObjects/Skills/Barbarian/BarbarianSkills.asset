@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c30ce02eca3089f42bf970f67c8ae467, type: 3}
+  m_Name: BarbarianSkills
+  m_EditorClassIdentifier: 
+  fightClass: 0
+  skills:
+  - {fileID: 11400000, guid: 1f973ac7874ee004dbe3f2588630bd73, type: 2}
+  - {fileID: 11400000, guid: bbe3c00fc240f434e8e27374653bd7f5, type: 2}
+  - {fileID: 11400000, guid: 252131a1cbb0f0d4983da6e08c2a9f83, type: 2}
+  - {fileID: 11400000, guid: 02827ef5adb08d449a33fb62570ded64, type: 2}

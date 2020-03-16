@@ -1,31 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using TMPro;
 using UnityEngine;
-using TMPro;
 
 public class ItemInfoStat : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI type;
     [SerializeField] TextMeshProUGUI value;
-
-    public void SetData(ItemMainStatValue stats) {
-
+    public void SetData(ItemMainStatValue stats)
+    {
         type.text = stats.StatToShortString();
-        value.text = $"+ {stats.value}";
-
-        Debug.Log("MainStat");
+        value.text = $"{stats.value}";
 
         var color = Colors.ByMainStat(stats.stat);
         type.color = color;
-        Debug.Log(type.color.g);
         value.color = color;
     }
 
     public void SetData(ItemSubStatValue stats)
     {
         type.text = stats.stat.ToString();
-        value.text = $"+ {stats.value}";
+        value.text = SubStats.GetSimpleString(stats.stat, stats.value);
     }
-
-
 }

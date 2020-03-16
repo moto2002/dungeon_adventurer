@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d017e0e30a3453548b5d48a7188e31fb, type: 3}
+  m_Name: TestObstacle 1
+  m_EditorClassIdentifier: 
+  optional: 1
+  mainDescription: Your group stumbles upon a big pit, which hinders the group from
+    continuing on their path. There is a small bridge, which looks  a little bit
+    shaky.
+  controllerPrefab: {fileID: 8110481699500738187, guid: 9ae31330979819c4bb0fd237843302e5,
+    type: 3}
+  noReqOption:
+    requirements: []
+    startText: Slowly cross the bridge.
+    successRate:
+      stat: 0
+      minValue: 0
+      desiredValue: 0
+    resultText: You crossed, but lost alot of focus and mana.
+    results:
+    - type: 2
+      reward:
+        type: 0
+        value: 0
+      penalty:
+        type: 1
+        value: 20
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+  firstSkillOption:
+    requirements:
+    - stat: 2
+      value: 15
+    startText: Jump across the gap.
+    successRate:
+      stat: 2
+      minValue: 15
+      desiredValue: 75
+    resultText: All your members jumped across successfully.
+    results:
+    - type: 2
+      reward:
+        type: 0
+        value: 0
+      penalty:
+        type: 0
+        value: 15
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+  secondSkillOption:
+    requirements:
+    - stat: 0
+      value: 25
+    startText: Throw and toss members across the gap.
+    successRate:
+      stat: 0
+      minValue: 25
+      desiredValue: 80
+    resultText: With pure Strength you achieve the mere impossible.
+    results:
+    - type: 2
+      reward:
+        type: 0
+        value: 0
+      penalty:
+        type: 0
+        value: 30
+      action:
+        m_PersistentCalls:
+          m_Calls: []

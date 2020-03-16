@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4698621009335317635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c63cec980eecdb49b4883040647504a, type: 3}
+  m_Name: WeaponDamage
+  m_EditorClassIdentifier: 
+  damagePercentage: 1.2
+  type: 0
+  lifeSteal: 0
+  ignoreResistance: 0
+  upgrades:
+  - level: 0
+    damagePercentage: 1.2
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.2
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.2
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.2
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.2
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.2
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.2
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.2
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.2
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.2
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+--- !u!114 &-1930378069501530167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c13a6561dafbd448169f90aea4afef, type: 3}
+  m_Name: ConditionalDamage
+  m_EditorClassIdentifier: 
+  damagePercentage: 5
+  type: 4
+  lifeSteal: 0
+  ignoreResistance: 0
+  conditionType: 1
+  conditionMarker: 0
+  conditionStatus: 0
+  conditionValue: 0.2
+  upgrades:
+  - level: 0
+    damagePercentage: 0
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+    conditionType: 0
+    conditionMarker: 0
+    conditionStatus: 0
+    conditionValue: 0
+  - level: 0
+    damagePercentage: 0
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+    conditionType: 0
+    conditionMarker: 0
+    conditionStatus: 0
+    conditionValue: 0
+  - level: 0
+    damagePercentage: 0
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+    conditionType: 0
+    conditionMarker: 0
+    conditionStatus: 0
+    conditionValue: 0
+  - level: 0
+    damagePercentage: 0
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+    conditionType: 0
+    conditionMarker: 0
+    conditionStatus: 0
+    conditionValue: 0
+  - level: 0
+    damagePercentage: 0
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+    conditionType: 0
+    conditionMarker: 0
+    conditionStatus: 0
+    conditionValue: 0
+  - level: 0
+    damagePercentage: 0
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+    conditionType: 0
+    conditionMarker: 0
+    conditionStatus: 0
+    conditionValue: 0
+  - level: 0
+    damagePercentage: 0
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+    conditionType: 0
+    conditionMarker: 0
+    conditionStatus: 0
+    conditionValue: 0
+  - level: 0
+    damagePercentage: 0
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+    conditionType: 0
+    conditionMarker: 0
+    conditionStatus: 0
+    conditionValue: 0
+  - level: 0
+    damagePercentage: 0
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+    conditionType: 0
+    conditionMarker: 0
+    conditionStatus: 0
+    conditionValue: 0
+  - level: 0
+    damagePercentage: 0
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0
+    conditionType: 0
+    conditionMarker: 0
+    conditionStatus: 0
+    conditionValue: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a776bad584fd410489d5c725ff71ba84, type: 3}
+  m_Name: Killing Blow
+  m_EditorClassIdentifier: 
+  id: 2
+  displayName: Killing Blow
+  cooldown: 2
+  manaCost: 0
+  isPassive: 0
+  icon: {fileID: 21300000, guid: ebfa9e27de05670448f09ac6e9d7a059, type: 3}
+  description: Deal _p_DmgPercentage_ to a single enemy. Deal additional _cP_DamagePercentage_
+    _cP_Value_ .
+  targetType: 0
+  targetSite: 2
+  targetCount: 0
+  upgrades:
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  possiblePositions: 000101000101000101
+  possibleTargets: 010001000101010001
+  SkillEffects:
+  - effect: {fileID: -4698621009335317635}
+  - effect: {fileID: -1930378069501530167}
+  RemainingCooldown: 0

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae7adc6c82de0c4098c0e1550012088, type: 3}
+  m_Name: Dex_Base_Belts
+  m_EditorClassIdentifier: 
+  id: 22
+  type: 1
+  icons:
+  - {fileID: 21300000, guid: 714c4ca28307864498e2bbcb6e446623, type: 3}
+  - {fileID: 21300000, guid: dc360b7aa29b73545ae884f5081795d7, type: 3}
+  - {fileID: 21300000, guid: 0d151c7d1712f714f8c75c419f849262, type: 3}
+  - {fileID: 21300000, guid: bcf29c1456a7db040b776c719acb103f, type: 3}
+  - {fileID: 21300000, guid: f4d0a3c5d01d09c4aa6a03e0582fc7ca, type: 3}
+  statFocus:
+  - {fileID: 11400000, guid: cc0b803f5ba5f0f468099789385ed6b6, type: 2}
+  - {fileID: 11400000, guid: 41b808c03912ce34990d97aeba475b7c, type: 2}
+  - {fileID: 11400000, guid: dd8d998e7e70d704cb20a5e407fc86d2, type: 2}
+  - {fileID: 11400000, guid: 5896a4f0858dafc4c94308aaca9002ad, type: 2}

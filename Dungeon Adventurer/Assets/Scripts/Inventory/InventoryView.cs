@@ -1,49 +1,61 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class InventoryView : MonoBehaviour
+public class InventoryView : View
 {
-    private Item[] _items;
+    const int RowsPerColumn = 8;
 
     [SerializeField] Transform container;
     [SerializeField] ItemController prefab_Item;
     [SerializeField] Slot prefab_Slot;
-
     [SerializeField] ItemInfoView itemInfo;
 
+    private List<Item> _items;
+    FilterMode _filter = FilterMode.Cost;
+    bool _orderDesc = true;
 
-    public void SetData(Item[] items) {
+    Hero _currentHero;
 
-        _items = items;
-        Init();
+    void Init()
+    {
+        var length = _items.Count;
 
-    }
+        var columnCount = length / RowsPerColumn;
 
-    void Init() {
+        if (length % RowsPerColumn != 0) columnCount++;
 
-        var length = _items.Length;
+        Slot[] slots = new Slot[columnCount * RowsPerColumn];
 
-        var columnCount = length / 3;
-
-        if (length % 3 != 0) columnCount++;
-
-        Slot[] slots = new Slot[columnCount * 3];
-
-        for (int i = 0; i < columnCount*3; i++)
+        for (int i = 0; i < columnCount * RowsPerColumn; i++)
         {
-             var slot =Instantiate(prefab_Slot, container);
+            var slot = Instantiate(prefab_Slot, container);
             slots[i] = slot;
         }
 
         List<GameObject> itemControllers = new List<GameObject>();
+        var orderedList = _items;
+        switch (_filter)
+        {
+            case FilterMode.None:
+                break;
+            case FilterMode.Cost:
+                orderedList = _orderDesc ? _items.OrderByDescending(e => e.price).ToList() : _items.OrderBy(e => e.price).ToList();
+                break;
+            case FilterMode.Rarity:
+                orderedList = _orderDesc ? _items.OrderByDescending(e => e.rarity).ToList() : _items.OrderBy(e => e.rarity).ToList();
+                break;
+            case FilterMode.Type:
+                orderedList = _orderDesc ? _items.OrderByDescending(e => e.type).ToList() : _items.OrderBy(e => e.type).ToList();
+                break;
+        }
 
-
-        foreach (var item in _items) {
-
-            var i = Instantiate(prefab_Item);
-            i.SetData(item, delegate { itemInfo.SetData(item);});
-            itemControllers.Add(i.gameObject);
+        foreach (var item in orderedList)
+        {
+            var itemController = Instantiate(prefab_Item);
+            itemController.SetData(item, () => itemInfo.SetData(_currentHero, item, false));
+            itemControllers.Add(itemController.gameObject);
         }
 
         for (int i = 0; i < itemControllers.Count; i++)
@@ -51,4 +63,59 @@ public class InventoryView : MonoBehaviour
             slots[i].item = itemControllers[i];
         }
     }
+
+    public void Refresh(Hero hero)
+    {
+        _currentHero = hero;
+    }
+
+    public void SetFilter(int filter)
+    {
+        var newFilter = (FilterMode)filter;
+        if (_filter == newFilter)
+        {
+            _orderDesc = !_orderDesc;
+        }
+        else
+        {
+            _orderDesc = true;
+            _filter = newFilter;
+        }
+        RemoveInventoryItems();
+        Init();
+    }
+
+    void RemoveInventoryItems()
+    {
+        foreach (Transform trans in container)
+        {
+            Destroy(trans.gameObject);
+        }
+    }
+
+    public void RefreshInventory(InventoryModel inventory)
+    {
+        var list = inventory.InventoryItems.items;
+        if (list == null) return;
+
+        var itemList = new List<Item>();
+
+        foreach (var itemData in list)
+        {
+            var item = ScriptableObject.CreateInstance<Item>();
+            item.SetData(itemData);
+            itemList.Add(item);
+        }
+        _items = itemList;
+        RemoveInventoryItems();
+        Init();
+    }
+}
+
+public enum FilterMode
+{
+    None,
+    Cost,
+    Rarity,
+    Type,
 }

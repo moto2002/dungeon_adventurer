@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c30ce02eca3089f42bf970f67c8ae467, type: 3}
+  m_Name: MonsterSkills
+  m_EditorClassIdentifier: 
+  fightClass: 0
+  skills:
+  - {fileID: 11400000, guid: db10c04c74e340f409624711df5e8d90, type: 2}
+  - {fileID: 11400000, guid: 05cc6bdbafb12d243af9d6ec8cc1d969, type: 2}
+  - {fileID: 11400000, guid: 6320d0ed23ca23148b701a02759016f7, type: 2}
+  - {fileID: 11400000, guid: 0aee73e380452c843ae392d850c541b5, type: 2}
+  - {fileID: 11400000, guid: 371305c533b121a4c96b227de974ded4, type: 2}
+  - {fileID: 11400000, guid: 9c55e60a2658eb04e850af295a909f07, type: 2}

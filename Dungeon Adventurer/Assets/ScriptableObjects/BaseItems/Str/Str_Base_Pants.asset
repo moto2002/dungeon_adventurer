@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae7adc6c82de0c4098c0e1550012088, type: 3}
+  m_Name: Str_Base_Pants
+  m_EditorClassIdentifier: 
+  id: 90
+  type: 7
+  icons:
+  - {fileID: 21300000, guid: eed9e413c17c9d245a965eaadfeb3366, type: 3}
+  - {fileID: 21300000, guid: 42367023dd6aee64f895a4e5ec44a85d, type: 3}
+  - {fileID: 21300000, guid: 70955b8f9f8d08f478aee7af85ac18cc, type: 3}
+  - {fileID: 21300000, guid: 0eb54c276616e794990d32472a681a32, type: 3}
+  - {fileID: 21300000, guid: 9a063d4590208fc43908245e84588a3f, type: 3}
+  statFocus:
+  - {fileID: 11400000, guid: 49bb9687b3799504d9b3e923bbe45ef4, type: 2}
+  - {fileID: 11400000, guid: c107e6f2dc4fef04ab93f1159bdea87c, type: 2}
+  - {fileID: 11400000, guid: 7afb7fc5d9c994b44916ee9c7c734f68, type: 2}
+  - {fileID: 11400000, guid: d27687376e88dbb43900ea8a89c8ac92, type: 2}

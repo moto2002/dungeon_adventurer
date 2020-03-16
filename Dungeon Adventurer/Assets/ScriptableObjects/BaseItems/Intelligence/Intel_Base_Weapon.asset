@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aa4d584af554124a8ef2097fdbe4ad5, type: 3}
+  m_Name: Intel_Base_Weapon
+  m_EditorClassIdentifier: 
+  id: 49
+  type: 10
+  icons:
+  - {fileID: 21300000, guid: 496afad096f0f4a4495a9a81c7b86e96, type: 3}
+  - {fileID: 21300000, guid: 1aad2bf6905ae3a4aad39e78ea67e217, type: 3}
+  - {fileID: 21300000, guid: 299e852b601c83f428a6b791987fbad4, type: 3}
+  - {fileID: 21300000, guid: 45258236ba7acc448802482fc4dc9353, type: 3}
+  - {fileID: 21300000, guid: d65a58a3f6bf0344084174d2f3335563, type: 3}
+  - {fileID: 21300000, guid: e0afe719fadee06429246492f6144c56, type: 3}
+  - {fileID: 21300000, guid: e979c35401443f9448a0e88ac0a06181, type: 3}
+  statFocus:
+  - {fileID: 11400000, guid: 34934e1ea1b15f54fbc12df8801deba9, type: 2}
+  - {fileID: 11400000, guid: 5b9d9b2909b71f2438899ac2e7ba677d, type: 2}
+  - {fileID: 11400000, guid: 0b9f5a5fe11b08748b0bb857013d28a0, type: 2}
+  - {fileID: 11400000, guid: bb478b06c7963384481ec27d230af615, type: 2}
+  MinDamage: 0
+  MaxDamage: 1
+  MinDamageIncrease: 1
+  MaxDamageIncrease: 1
+  WeaponType: 3

@@ -56,8 +56,6 @@ public class Inventory : MonoBehaviour, IHasChanged
     private int tp_magicper;
     private int tp_goldper;
 
-
-
     void Awake()
     {
         k_inventory = this;

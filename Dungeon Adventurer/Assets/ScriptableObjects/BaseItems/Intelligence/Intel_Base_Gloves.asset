@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae7adc6c82de0c4098c0e1550012088, type: 3}
+  m_Name: Intel_Base_Gloves
+  m_EditorClassIdentifier: 
+  id: 45
+  type: 5
+  icons:
+  - {fileID: 21300000, guid: 5f0c1aa47cc65c94b89dd7ce6236bb0d, type: 3}
+  - {fileID: 21300000, guid: b0926844a3ca93548a8712fe93913669, type: 3}
+  - {fileID: 21300000, guid: 5397f3d44a5ceb24c8e420feb28f2ab4, type: 3}
+  - {fileID: 21300000, guid: 08e8ee31fe0d0af45b0f4fcdb9342faa, type: 3}
+  - {fileID: 21300000, guid: 5257bce6522478e4f98ea1da02901cd5, type: 3}
+  statFocus:
+  - {fileID: 11400000, guid: 34934e1ea1b15f54fbc12df8801deba9, type: 2}
+  - {fileID: 11400000, guid: 5b9d9b2909b71f2438899ac2e7ba677d, type: 2}
+  - {fileID: 11400000, guid: 0b9f5a5fe11b08748b0bb857013d28a0, type: 2}
+  - {fileID: 11400000, guid: bb478b06c7963384481ec27d230af615, type: 2}

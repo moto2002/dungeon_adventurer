@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rarity: 2
   startingPoints: 30
-  growth: []
+  levelPoints: 14

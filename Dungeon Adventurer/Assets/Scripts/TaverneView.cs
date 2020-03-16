@@ -1,19 +1,41 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
-public class TaverneView : View {
-    [SerializeField] TaverneCharacter prefab;
-    [SerializeField] Transform container;
-
+public class TaverneView : View, CurrencyService.OnCurrencyChanged
+{
     const int HeroCount = 4;
 
-    public override void AfterShow() {
+    [SerializeField] TaverneCharacter prefab;
+    [SerializeField] Transform container;
+    [SerializeField] Button closeButton;
 
-        for (int i = 0; i < HeroCount; i++) {
+    CurrencyModel _model;
+
+    protected override void Awake()
+    {
+        closeButton.onClick.AddListener(()=> ViewUtility.ShowThenHide<StartView, TaverneView>());
+    }
+
+    public void OnModelChanged(CurrencyModel model)
+    {
+        _model = model;
+        ClearContainer();
+        for (int i = 0; i < HeroCount; i++)
+        {
             var character = CharacterCreator.CreateHero();
             var entry = Instantiate(prefab);
 
             entry.transform.SetParent(container);
-            entry.SetData(character);
+            entry.transform.localScale = Vector3.one;
+            entry.transform.localPosition = Vector3.one;
+            entry.SetData(character, _model);
+        }
+    }
+
+    void ClearContainer() {
+
+        foreach (Transform trans in container) {
+            Destroy(trans.gameObject);
         }
     }
 }

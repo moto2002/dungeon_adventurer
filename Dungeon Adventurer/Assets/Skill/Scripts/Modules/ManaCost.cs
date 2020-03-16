@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu (fileName = "New ManaCost", menuName = "Skill/Effect/ManaCost")]
 public class ManaCost : Cost {
 	public int manaDrain;
 

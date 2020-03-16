@@ -1,0 +1,72 @@
+.CollectionButton {
+    height: 36px;
+    font-size: 18px;
+    -unity-font-style: italic;
+    color: rgb(103, 55, 55);
+    width: 128px;
+}
+
+.SkillButton {
+    -unity-font-style: italic;
+    background-color: rgb(207, 173, 91);
+    width: 100px;
+    align-items: center;
+}
+
+.SkillButtonTitle {
+    white-space: normal;
+    font-size: 15px;
+}
+
+.SkillButtonIcon {
+    -unity-background-scale-mode: stretch-to-fill;
+    height: 78px;
+    width: 78px;
+}
+
+.Container {
+    height: 251px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.ScrollItemContainer {
+    height: 300px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ItemLevelTitle {
+    white-space: normal;
+    font-size: 24px;
+    color: rgb(50, 50, 50);
+    margin-left: 10px;
+    -unity-font: resource('Fonts/Fonts/duality');
+}
+
+#RemoveSkillButton {
+    margin-left: 420px;
+    margin-top: -25px;
+    background-color: rgb(150,0,0);
+    color: rgb(255, 255, 255);
+}
+
+#messageText {
+    flex-direction: column;
+    height: 100px;
+    width: 200px;
+    margin-left: 2.5px;
+}
+     
+#messageText TextInput {
+    height: 100px;
+    width: 200px;
+    -unity-text-align: upper-left;  
+    -unity-font-style: normal;
+    white-space: normal;
+    margin-right: 1px;
+}
+

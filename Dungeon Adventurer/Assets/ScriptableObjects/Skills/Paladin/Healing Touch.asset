@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a776bad584fd410489d5c725ff71ba84, type: 3}
+  m_Name: Healing Touch
+  m_EditorClassIdentifier: 
+  id: 1
+  displayName: Healing Touch
+  cooldown: 0
+  manaCost: 0
+  isPassive: 0
+  icon: {fileID: 21300000, guid: 184fd275222dee842965984e0c28bc8a, type: 3}
+  description: 
+  targetType: 0
+  targetSite: 2
+  targetCount: 0
+  upgrades:
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  possiblePositions: 010000010100010000
+  possibleTargets: 010001000100010001
+  SkillEffects:
+  - effect: {fileID: 4366184484011536501}
+  - effect: {fileID: 7397158155460752566}
+  RemainingCooldown: 0
+--- !u!114 &4366184484011536501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c63cec980eecdb49b4883040647504a, type: 3}
+  m_Name: WeaponDamage
+  m_EditorClassIdentifier: 
+  damagePercentage: 0.5
+  type: 2
+  lifeSteal: 0
+  ignoreResistance: 0
+  upgrades:
+  - level: 0
+    damagePercentage: 0.5
+    type: 2
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 0.5
+    type: 2
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 0.5
+    type: 2
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 0.5
+    type: 2
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 0.5
+    type: 2
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 0.5
+    type: 2
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 0.5
+    type: 2
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 0.5
+    type: 2
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 0.5
+    type: 2
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 0.5
+    type: 2
+    lifeSteal: 0
+    ignoreResistance: 0
+--- !u!114 &7397158155460752566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbe8ebceb233524ebb42f9aa0db8c94, type: 3}
+  m_Name: Heal
+  m_EditorClassIdentifier: 
+  valueFlat: 1
+  valuePercentage: 0
+  receiver: 1
+  upgrades:
+  - level: 0
+    valueFlat: 0
+    valuePercentage: 0
+    receiver: 0
+  - level: 0
+    valueFlat: 0
+    valuePercentage: 0
+    receiver: 0
+  - level: 0
+    valueFlat: 0
+    valuePercentage: 0
+    receiver: 0
+  - level: 0
+    valueFlat: 0
+    valuePercentage: 0
+    receiver: 0
+  - level: 0
+    valueFlat: 0
+    valuePercentage: 0
+    receiver: 0
+  - level: 0
+    valueFlat: 0
+    valuePercentage: 0
+    receiver: 0
+  - level: 0
+    valueFlat: 0
+    valuePercentage: 0
+    receiver: 0
+  - level: 0
+    valueFlat: 0
+    valuePercentage: 0
+    receiver: 0
+  - level: 0
+    valueFlat: 0
+    valuePercentage: 0
+    receiver: 0
+  - level: 0
+    valueFlat: 0
+    valuePercentage: 0
+    receiver: 0

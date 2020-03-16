@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae7adc6c82de0c4098c0e1550012088, type: 3}
+  m_Name: Intel_Base_Pants
+  m_EditorClassIdentifier: 
+  id: 50
+  type: 7
+  icons:
+  - {fileID: 21300000, guid: eb0d870a11c3b904ea23da6f9117b5f3, type: 3}
+  - {fileID: 21300000, guid: 74dd99f9d8ba0224f94b23c7cf694d39, type: 3}
+  - {fileID: 21300000, guid: fd25c19d5dab71548b0bc8cda063a1b2, type: 3}
+  - {fileID: 21300000, guid: 858337bd774a51f41bf2ebcba7c240d1, type: 3}
+  - {fileID: 21300000, guid: ddf46064cb9ff504999a7227c185929a, type: 3}
+  statFocus:
+  - {fileID: 11400000, guid: 34934e1ea1b15f54fbc12df8801deba9, type: 2}
+  - {fileID: 11400000, guid: 5b9d9b2909b71f2438899ac2e7ba677d, type: 2}
+  - {fileID: 11400000, guid: 0b9f5a5fe11b08748b0bb857013d28a0, type: 2}
+  - {fileID: 11400000, guid: bb478b06c7963384481ec27d230af615, type: 2}

@@ -1,0 +1,277 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1324847269139344515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c63cec980eecdb49b4883040647504a, type: 3}
+  m_Name: WeaponDamage
+  m_EditorClassIdentifier: 
+  damagePercentage: 1.3
+  type: 1
+  lifeSteal: 0
+  ignoreResistance: 0
+  upgrades:
+  - level: 0
+    damagePercentage: 1.3
+    type: 1
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.3
+    type: 1
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.3
+    type: 1
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.3
+    type: 1
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.3
+    type: 1
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.3
+    type: 1
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.3
+    type: 1
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.3
+    type: 1
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.3
+    type: 1
+    lifeSteal: 0
+    ignoreResistance: 0
+  - level: 0
+    damagePercentage: 1.3
+    type: 1
+    lifeSteal: 0
+    ignoreResistance: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a776bad584fd410489d5c725ff71ba84, type: 3}
+  m_Name: Infernal Rage
+  m_EditorClassIdentifier: 
+  id: 4
+  displayName: Infernal Rage
+  cooldown: 4
+  manaCost: 0
+  isPassive: 0
+  icon: {fileID: 21300000, guid: 7262c06b03af30a468dfc21dd16a5505, type: 3}
+  description: 
+  targetType: 0
+  targetSite: 2
+  targetCount: 2
+  upgrades:
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  possiblePositions: 010101010101010101
+  possibleTargets: 010101010101010101
+  SkillEffects:
+  - effect: {fileID: -1324847269139344515}
+  - effect: {fileID: 8029249665629035445}
+  RemainingCooldown: 0
+--- !u!114 &8029249665629035445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdf9b03851287534e932c8fad5140658, type: 3}
+  m_Name: StatBuff
+  m_EditorClassIdentifier: 
+  changeFlat: 0
+  changePerc: -0.5
+  changePerLifeLost: 0
+  stat: 4
+  receiver: 1
+  turnCounts: 1
+  upgrades:
+  - level: 0
+    changeFlat: 0
+    changePerc: 0
+    changePerLifeLost: 0
+    stat: 0
+    receiver: 0
+    turnCounts: 0
+  - level: 0
+    changeFlat: 0
+    changePerc: 0
+    changePerLifeLost: 0
+    stat: 0
+    receiver: 0
+    turnCounts: 0
+  - level: 0
+    changeFlat: 0
+    changePerc: 0
+    changePerLifeLost: 0
+    stat: 0
+    receiver: 0
+    turnCounts: 0
+  - level: 0
+    changeFlat: 0
+    changePerc: 0
+    changePerLifeLost: 0
+    stat: 0
+    receiver: 0
+    turnCounts: 0
+  - level: 0
+    changeFlat: 0
+    changePerc: 0
+    changePerLifeLost: 0
+    stat: 0
+    receiver: 0
+    turnCounts: 0
+  - level: 0
+    changeFlat: 0
+    changePerc: 0
+    changePerLifeLost: 0
+    stat: 0
+    receiver: 0
+    turnCounts: 0
+  - level: 0
+    changeFlat: 0
+    changePerc: 0
+    changePerLifeLost: 0
+    stat: 0
+    receiver: 0
+    turnCounts: 0
+  - level: 0
+    changeFlat: 0
+    changePerc: 0
+    changePerLifeLost: 0
+    stat: 0
+    receiver: 0
+    turnCounts: 0
+  - level: 0
+    changeFlat: 0
+    changePerc: 0
+    changePerLifeLost: 0
+    stat: 0
+    receiver: 0
+    turnCounts: 0
+  - level: 0
+    changeFlat: 0
+    changePerc: 0
+    changePerLifeLost: 0
+    stat: 0
+    receiver: 0
+    turnCounts: 0

@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a776bad584fd410489d5c725ff71ba84, type: 3}
+  m_Name: Assassination
+  m_EditorClassIdentifier: 
+  id: 4
+  displayName: Assassination
+  cooldown: 0
+  manaCost: 0
+  isPassive: 0
+  icon: {fileID: 21300000, guid: e11bff2966463ec48a1efef98fc804f3, type: 3}
+  description: Deal _p_DmgPercentage_ to a single enemy. Assassination ignores _p_IgnoreRes_
+    of targets Resistance.
+  targetType: 0
+  targetSite: 2
+  targetCount: 0
+  upgrades:
+  - level: 0
+    cooldown: 5
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 4
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  possiblePositions: 000101000101000101
+  possibleTargets: 000100010101000100
+  SkillEffects:
+  - effect: {fileID: 1324642549775503917}
+  RemainingCooldown: 0
+--- !u!114 &1324642549775503917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c63cec980eecdb49b4883040647504a, type: 3}
+  m_Name: WeaponDamage
+  m_EditorClassIdentifier: 
+  damagePercentage: 1.5
+  type: 0
+  lifeSteal: 0
+  ignoreResistance: 0.5
+  upgrades:
+  - level: 0
+    damagePercentage: 1.5
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0.5
+  - level: 0
+    damagePercentage: 1.5
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0.5
+  - level: 0
+    damagePercentage: 1.5
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0.5
+  - level: 0
+    damagePercentage: 1.5
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0.5
+  - level: 0
+    damagePercentage: 1.5
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0.5
+  - level: 0
+    damagePercentage: 1.5
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0.5
+  - level: 0
+    damagePercentage: 1.5
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0.5
+  - level: 0
+    damagePercentage: 1.5
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0.5
+  - level: 0
+    damagePercentage: 1.5
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0.5
+  - level: 0
+    damagePercentage: 1.5
+    type: 0
+    lifeSteal: 0
+    ignoreResistance: 0.5

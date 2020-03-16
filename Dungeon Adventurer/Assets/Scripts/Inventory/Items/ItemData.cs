@@ -1,13 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿[System.Serializable]
+public class ItemData {
 
-[System.Serializable]
-public class ItemData
-{
-    public int id;
-    public ItemType slot;
+    public int level;
+    public int baseItemID;
+    public string itemName;
+    public Rarity rarity;
     public ItemMainStatValue[] mainStatChanges;
     public ItemSubStatValue[] subStatChanges;
+    public int skillID;
 }
+
 

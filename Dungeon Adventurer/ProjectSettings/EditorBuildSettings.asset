@@ -6,30 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start.unity
+    path: Assets/Scenes/Bootstrap.unity
+    guid: c30924f222c76c54ab7bb1a4be432828
+  - enabled: 1
+    path: Assets/Scenes/StartView.unity
     guid: 726ffbc6ee9bfaa4fb37a1770944cfee
   - enabled: 1
-    path: Assets/Scenes/View_Characters.unity
-    guid: 630bbce696ed42e4f83b8417f03e0e37
+    path: Assets/Scenes/BattleView.unity
+    guid: 4a160f93ce840ea45a6a70a40a3f14f7
   - enabled: 1
-    path: Assets/Scenes/View_Dungeon.unity
-    guid: 5485a4011e565cf47b158855e13e3d48
-  - enabled: 1
-    path: Assets/Scenes/View_BattleOrder.unity
+    path: Assets/Scenes/BattleOrderView.unity
     guid: 05428afc51bcacd448045390a8feadb2
   - enabled: 1
-    path: Assets/Scenes/View_Shop.unity
-    guid: edcf8df4c88d7d948be995d54dd048ec
+    path: Assets/Scenes/CharactersView.unity
+    guid: 630bbce696ed42e4f83b8417f03e0e37
   - enabled: 1
-    path: Assets/Scenes/View_Smith.unity
-    guid: 8e855bccb2da1e64aa83a0c40b751c73
+    path: Assets/Scenes/CharacterOverviewView.unity
+    guid: cac8e2e89b4360840b2d83a2569965ab
   - enabled: 1
-    path: Assets/Scenes/View_Taverne.unity
-    guid: 366ea14c1e96be84ab0b0d9d1fdc3849
-  - enabled: 1
-    path: Assets/Scenes/View_Details.unity
+    path: Assets/Scenes/CharacterDetailsView.unity
     guid: 94cd34aa219508147b1bc7d8c9d0d968
   - enabled: 1
-    path: Assets/Scenes/View_Battle.unity
-    guid: 4a160f93ce840ea45a6a70a40a3f14f7
+    path: Assets/Scenes/DungeonView.unity
+    guid: 5485a4011e565cf47b158855e13e3d48
+  - enabled: 1
+    path: Assets/Scenes/ShopView.unity
+    guid: edcf8df4c88d7d948be995d54dd048ec
+  - enabled: 1
+    path: Assets/Scenes/SmithView.unity
+    guid: 8e855bccb2da1e64aa83a0c40b751c73
+  - enabled: 1
+    path: Assets/Scenes/TaverneView.unity
+    guid: 366ea14c1e96be84ab0b0d9d1fdc3849
   m_configObjects: {}

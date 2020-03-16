@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
@@ -11,42 +12,33 @@ public class SceneManagement : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void Show(string name, Controller controller)
+    public void ShowStart()
     {
-        StartCoroutine(ShowView(name, controller));       
+        ViewUtility.Show<StartView>();
     }
 
     public void ShowShopView()
     {
-        StartCoroutine(ShowView("View_Shop", new CharactersController(DataHolder._data.CharData)));
+        ViewUtility.Show<ShopView>();
     }
 
     public void ShowInventoryView()
     {
-        StartCoroutine(ShowView("View_Characters", new CharactersController(DataHolder._data.CharData)));
+        ViewUtility.ShowThenHide<CharacterOverviewView, StartView>();
     }
 
     public void ShowSmithView()
     {
-        StartCoroutine(ShowView("View_Smith", new CharactersController(DataHolder._data.CharData)));
+        // ViewUtility.Show<ShowSmithView>();
     }
 
     public void ShowTaverneView()
     {
-        StartCoroutine(ShowView("View_Taverne", new CharactersController(DataHolder._data.CharData)));
+        ViewUtility.ShowThenHide<TaverneView, StartView>();
     }
 
     public void ShowBattleOrderView()
     {
-        StartCoroutine(ShowView("View_BattleOrder", new CharactersController(DataHolder._data.CharData)));
-    }
-
-    public IEnumerator ShowView(string name, Controller controller)
-    {
-        CoroutineWithData cd = new CoroutineWithData(this, UIManager._instance.LoadScene(name, false));
-        yield return cd.coroutine;
-        View view = (View)cd.result;
-        view.Controller = controller;
-        view.Show();
+        ViewUtility.ShowThenHide<BattleOrderView, StartView>();
     }
 }

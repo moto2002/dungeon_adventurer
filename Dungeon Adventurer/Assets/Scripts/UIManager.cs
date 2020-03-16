@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-
-
     public static UIManager _instance;
 
     private List<SceneInfo> _stackedScenes;
@@ -116,14 +114,14 @@ public class UIManager : MonoBehaviour
 
     public void CloseScene(string name)
     {
-        foreach (SceneInfo s in _stackedScenes.ToArray())
-        {
-            if (s._attachedScene.name.Equals(name))
-            {
-                s._attachedView.Close();
-                return;
-            }
-        }
+        // foreach (SceneInfo s in _stackedScenes.ToArray())
+        // {
+        //     if (s._attachedScene.name.Equals(name))
+        //     {
+        //         s._attachedView.Close();
+        //         return;
+        //     }
+        // }
     }
 }
 

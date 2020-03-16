@@ -1,0 +1,55 @@
+###
+# Unity folders and files
+###
+[Aa]ssets/AssetStoreTools*
+[Bb]uild/
+[Ll]ibrary/
+[Ll]ocal[Cc]ache/
+[Oo]bj/
+[Tt]emp/
+[Uu]nityGenerated/
+*.vs/
+# file on crash reports
+sysinfo.txt
+# Unity3D generated meta files
+*.pidb.meta
+
+###
+# VS/MD solution and project files
+###
+[Ee]xportedObj/
+*.booproj
+*.csproj
+*.sln
+*.suo
+*.svd
+*.unityproj
+*.user
+*.userprefs
+*.pidb
+.DS_Store
+
+###
+# OS generated
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+Logs/
+.vs
+.vs/Dungeon Adventurer/v15/Server/sqlite3/storage.ide-wal
+.vs/Dungeon Adventurer/v15/Server/sqlite3/storage.ide-shm
+.vs/Dungeon Adventurer/v15/Server/sqlite3/storage.ide
+.vscode/launch.json
+.vscode/settings.json
+.vs
+*.ide
+.vs/Dungeon Adventurer/v15/Server/sqlite3/storage.ide-shm
+.vs/Dungeon Adventurer/v15/Server/sqlite3/storage.ide-wal
+android.apk
+Logs/Packages-Update.log

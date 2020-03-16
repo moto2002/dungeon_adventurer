@@ -8,12 +8,14 @@ public class UseSkillButton : MonoBehaviour
     [SerializeField] TextMeshProUGUI appliedText;
     [SerializeField] Button useButton;
 
-    struct StatusInfo {
+    struct StatusInfo
+    {
         public string buttontext;
         public bool interactable;
     }
 
-    readonly StatusInfo NO_TARGET_SELECTED = new StatusInfo() { buttontext= "Select Target", interactable = false };
+    readonly StatusInfo NO_CHARACTER_SELECTED = new StatusInfo() { buttontext = "Select Character", interactable = false };
+    readonly StatusInfo NO_POSITION_SELECTED = new StatusInfo() { buttontext = "Select Position", interactable = false };
     readonly StatusInfo NO_SKILL_SELECTED = new StatusInfo() { buttontext = "Select Skill", interactable = false };
     readonly StatusInfo NO_TARGET_AVAILABLE = new StatusInfo() { buttontext = "No Targets", interactable = false };
     readonly StatusInfo USE_SKILL = new StatusInfo() { buttontext = "Use Skill", interactable = true };
@@ -26,7 +28,8 @@ public class UseSkillButton : MonoBehaviour
         ChangeStatus();
     }
 
-    private void OnDisable() {
+    private void OnDisable()
+    {
         BattleView.StatusChanged -= ChangeStatus;
     }
 
@@ -36,8 +39,11 @@ public class UseSkillButton : MonoBehaviour
 
         switch (BattleView.CurrentSkillStatus)
         {
-            case SkillStatus.selectTarget:
-                statusInfo = NO_TARGET_SELECTED;
+            case SkillStatus.selectPosition:
+                statusInfo = NO_POSITION_SELECTED;
+                break;
+            case SkillStatus.selectCharacter:
+                statusInfo = NO_CHARACTER_SELECTED;
                 break;
             case SkillStatus.noTargets:
                 statusInfo = NO_TARGET_AVAILABLE;

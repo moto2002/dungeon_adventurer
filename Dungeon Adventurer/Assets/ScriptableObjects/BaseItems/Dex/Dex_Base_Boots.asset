@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae7adc6c82de0c4098c0e1550012088, type: 3}
+  m_Name: Dex_Base_Boots
+  m_EditorClassIdentifier: 
+  id: 23
+  type: 2
+  icons:
+  - {fileID: 21300000, guid: c56af448763518840bfcab3f0db5d90c, type: 3}
+  - {fileID: 21300000, guid: dd09efa5fe67197429ed3cce4c735467, type: 3}
+  - {fileID: 21300000, guid: 98414be487c0fec4383e0eac76aef91c, type: 3}
+  - {fileID: 21300000, guid: 67bb3a96a2b49d540a6316cfb1f51985, type: 3}
+  - {fileID: 21300000, guid: 701030f25d745164887d2310ba50e772, type: 3}
+  statFocus:
+  - {fileID: 11400000, guid: cc0b803f5ba5f0f468099789385ed6b6, type: 2}
+  - {fileID: 11400000, guid: 41b808c03912ce34990d97aeba475b7c, type: 2}
+  - {fileID: 11400000, guid: dd8d998e7e70d704cb20a5e407fc86d2, type: 2}
+  - {fileID: 11400000, guid: 5896a4f0858dafc4c94308aaca9002ad, type: 2}

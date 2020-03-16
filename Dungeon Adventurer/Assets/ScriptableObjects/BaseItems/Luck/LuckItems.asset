@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac65e72d237f9a4dbf3fa257f245ba6, type: 3}
+  m_Name: LuckItems
+  m_EditorClassIdentifier: 
+  mainStat: 4
+  items:
+  - {fileID: 11400000, guid: b67cb5a69e6a8ab4aa1b89fdcd53a4ff, type: 2}
+  - {fileID: 11400000, guid: 4d761667c3b00924a9ac0abf73b90daa, type: 2}
+  - {fileID: 11400000, guid: d77d2845acdec1248948aee4cef7a54d, type: 2}
+  - {fileID: 11400000, guid: 43f64a536509c944ba8c9543196cd96d, type: 2}
+  - {fileID: 11400000, guid: ec89ef42ec35b4947b1bd3cd53e981c9, type: 2}
+  - {fileID: 11400000, guid: f6d5f443fac4ac24c811ccf0193e4e9e, type: 2}
+  - {fileID: 11400000, guid: 5d2d96e8c593eaf4f9f2dc2bc6a77276, type: 2}
+  - {fileID: 11400000, guid: b2ca371ded42903458c484b9ba4b2756, type: 2}
+  - {fileID: 11400000, guid: f6282b24a8c242c42aa2fbc2bb0f270c, type: 2}
+  - {fileID: 11400000, guid: e4ee7c3e1b2f21c4085e2ceea7a7f23b, type: 2}
+  - {fileID: 11400000, guid: d3fc0f147a906164c8d3b8ac748f5287, type: 2}
+  statFocus: {fileID: 11400000, guid: c7c87457a04eff74b8c669f77f1b34e9, type: 2}

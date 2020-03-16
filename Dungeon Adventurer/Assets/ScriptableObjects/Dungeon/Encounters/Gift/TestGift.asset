@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04b4a85dd8e801e48926698da7664822, type: 3}
+  m_Name: TestGift
+  m_EditorClassIdentifier: 
+  optional: 1
+  mainDescription: A refreshing spring of water.
+  controllerPrefab: {fileID: 3047281564984549508, guid: 572f606236c58e14b8524e384236183f,
+    type: 3}
+  takeOption:
+    requirements: []
+    startText: Drink some Water
+    successRate:
+      stat: 0
+      minValue: 0
+      desiredValue: 0
+      successText: 
+    normalResultText: Mhmm refreshing.
+    results:
+    - type: 1
+      reward:
+        type: 0
+        value: 50
+        dungeonBuff:
+          mainBuffs: []
+          subBuffs: []
+        battleBuff:
+          mainBuffs: []
+          subBuffs: []
+          battleCount: 0
+        roomBuff:
+          mainBuffs: []
+          subBuffs: []
+          roomCount: 0
+      penalty:
+        type: 0
+        value: 0
+        mainBuff:
+          stat: 0
+          flat: 0
+          percent: 0
+        subBuff:
+          stat: 0
+          flat: 0
+          percent: 0
+      action:
+        m_PersistentCalls:
+          m_Calls: []

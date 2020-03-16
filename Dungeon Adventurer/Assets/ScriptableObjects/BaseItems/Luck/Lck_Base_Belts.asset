@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae7adc6c82de0c4098c0e1550012088, type: 3}
+  m_Name: Lck_Base_Belts
+  m_EditorClassIdentifier: 
+  id: 62
+  type: 1
+  icons:
+  - {fileID: 21300000, guid: 2e7a4c04458c5454ea869a3c9ab9cb35, type: 3}
+  - {fileID: 21300000, guid: 10d4260e4e3e556478ec271cffbffb47, type: 3}
+  - {fileID: 21300000, guid: 5e7257aca94e1fa42be58bd8e381e87e, type: 3}
+  - {fileID: 21300000, guid: fe0a8df8c2ace9e49bc369066bc17410, type: 3}
+  - {fileID: 21300000, guid: 77a458b25386e3740bee138617c166b1, type: 3}
+  statFocus:
+  - {fileID: 11400000, guid: b0afc02833333224993306603706ccfe, type: 2}
+  - {fileID: 11400000, guid: c7c87457a04eff74b8c669f77f1b34e9, type: 2}
+  - {fileID: 11400000, guid: cb3a355b294f7444382f6082938f35c4, type: 2}
+  - {fileID: 11400000, guid: 9b13954e800064347a3efb45cb9bf5f6, type: 2}

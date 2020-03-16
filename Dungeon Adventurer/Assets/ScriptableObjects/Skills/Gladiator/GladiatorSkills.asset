@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c30ce02eca3089f42bf970f67c8ae467, type: 3}
+  m_Name: GladiatorSkills
+  m_EditorClassIdentifier: 
+  fightClass: 2
+  skills:
+  - {fileID: 11400000, guid: c85db6859cf2c5042a9c2a61c091f85b, type: 2}
+  - {fileID: 11400000, guid: dcd1f916031fce74c96ccb08dbf7020f, type: 2}
+  - {fileID: 11400000, guid: 9ad372c890166b8468616cbc3075610d, type: 2}
+  - {fileID: 11400000, guid: 59e65724185ca4048a189fad7b367c93, type: 2}

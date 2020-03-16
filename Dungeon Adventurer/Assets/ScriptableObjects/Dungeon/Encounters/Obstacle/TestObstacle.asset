@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d017e0e30a3453548b5d48a7188e31fb, type: 3}
+  m_Name: TestObstacle
+  m_EditorClassIdentifier: 
+  optional: 1
+  mainDescription: Boulders block the way.
+  controllerPrefab: {fileID: 8110481699500738187, guid: 9ae31330979819c4bb0fd237843302e5,
+    type: 3}
+  noReqOption:
+    requirements: []
+    startText: Slowly move the boulders.
+    successRate:
+      stat: 0
+      minValue: 0
+      desiredValue: 0
+    resultText: Slow but steady you removed the boulders.
+    results:
+    - type: 2
+      reward:
+        type: 0
+        value: 0
+      penalty:
+        type: 0
+        value: 10
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+  firstSkillOption:
+    requirements:
+    - stat: 2
+      value: 10
+    startText: Quickly move around the boulders.
+    successRate:
+      stat: 2
+      minValue: 10
+      desiredValue: 60
+    resultText: You easily moved elagant across the stones.
+    results:
+    - type: 2
+      reward:
+        type: 0
+        value: 0
+      penalty:
+        type: 0
+        value: 15
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+  secondSkillOption:
+    requirements:
+    - stat: 4
+      value: 30
+    startText: Search for a hole.
+    successRate:
+      stat: 4
+      minValue: 30
+      desiredValue: 70
+    resultText: You find a hole and can travel forward.
+    results:
+    - type: 2
+      reward:
+        type: 0
+        value: 0
+      penalty:
+        type: 1
+        value: 30
+      action:
+        m_PersistentCalls:
+          m_Calls: []

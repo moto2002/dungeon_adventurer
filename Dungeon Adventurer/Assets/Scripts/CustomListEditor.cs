@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 using UnityEngine;
 
 [CustomEditor(typeof(Skill))]
@@ -110,7 +111,7 @@ public class CustomListEditor : Editor
         GetTarget.ApplyModifiedProperties();
     }
 
-    private T ModuleField<T>(string label, T current) where T : Module
+    private T ModuleField<T>(string label, T current) where T : Effect
     {
         T result;
         EditorGUI.BeginChangeCheck();
@@ -148,7 +149,6 @@ public class CustomListEditor : Editor
         if (result != null)
         {
             CreateCachedEditor(result, null, ref componentEditor);
-
             GUILayout.BeginVertical(EditorStyles.helpBox);
 
             componentEditor.OnInspectorGUI();
@@ -159,7 +159,7 @@ public class CustomListEditor : Editor
         return result;
     }
 
-    private T CreateModuleFromTemplate<T>(T template) where T : Module
+    private T CreateModuleFromTemplate<T>(T template) where T : Effect
     {
         var clone = Instantiate(template);
         clone.name = clone.name.Replace("(Clone)", "");
@@ -173,7 +173,7 @@ public class CustomListEditor : Editor
         return clone;
     }
 
-    private bool DestroyExistingModule(Module module)
+    private bool DestroyExistingModule(Effect module)
     {
         if (module != null)
         {
@@ -195,3 +195,5 @@ public class CustomListEditor : Editor
         return true;
     }
 }
+
+#endif

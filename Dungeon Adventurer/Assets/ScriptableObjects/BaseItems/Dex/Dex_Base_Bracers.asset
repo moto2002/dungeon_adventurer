@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae7adc6c82de0c4098c0e1550012088, type: 3}
+  m_Name: Dex_Base_Bracers
+  m_EditorClassIdentifier: 
+  id: 31
+  type: 3
+  icons:
+  - {fileID: 21300000, guid: d065a4197c7fdc34f9f4a3f006c3b8ae, type: 3}
+  - {fileID: 21300000, guid: 52d7175e6afa49a428795f50b5bec7a5, type: 3}
+  - {fileID: 21300000, guid: 5a05a18b54922ea4392c96c2ea0b6078, type: 3}
+  - {fileID: 21300000, guid: bc5985d4ee370c446ab18f996de5eb0d, type: 3}
+  - {fileID: 21300000, guid: 1cddda7f499fa5443b8e362e9554e0c7, type: 3}
+  statFocus:
+  - {fileID: 11400000, guid: cc0b803f5ba5f0f468099789385ed6b6, type: 2}
+  - {fileID: 11400000, guid: 41b808c03912ce34990d97aeba475b7c, type: 2}
+  - {fileID: 11400000, guid: dd8d998e7e70d704cb20a5e407fc86d2, type: 2}
+  - {fileID: 11400000, guid: 5896a4f0858dafc4c94308aaca9002ad, type: 2}

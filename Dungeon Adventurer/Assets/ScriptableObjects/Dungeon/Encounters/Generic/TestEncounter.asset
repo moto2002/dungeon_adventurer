@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e877203c2d6de340947f3f597238fd0, type: 3}
+  m_Name: TestEncounter
+  m_EditorClassIdentifier: 
+  optional: 0
+  mainDescription: There sems to be noise coming form the next room. It sounds like
+    metal sounds from moving armors.
+  options:
+  - requirements: []
+    startText: Try to hide.
+    successRate:
+      stat: 0
+      minValue: 0
+      desiredValue: 0
+      successText: 
+    normalResultText: Hiding in the shadows, the group avoid a confrontation.
+    results:
+    - type: 1
+      reward:
+        type: 3
+        value: 0
+        dungeonBuff:
+          mainBuffs:
+          - stat: 0
+            flat: 0
+            percent: 0.1
+          subBuffs: []
+        battleBuff:
+          mainBuffs: []
+          subBuffs: []
+          battleCount: 0
+        roomBuff:
+          mainBuffs: []
+          subBuffs: []
+          roomCount: 0
+      penalty:
+        type: 0
+        value: 0
+        mainBuff:
+          stat: 0
+          flat: 0
+          percent: 0
+        subBuff:
+          stat: 0
+          flat: 0
+          percent: 0
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+  - requirements: []
+    startText: Prepare for a Fight.
+    successRate:
+      stat: 0
+      minValue: 0
+      desiredValue: 0
+      successText: 
+    normalResultText: Lets go get them!
+    results:
+    - type: 1
+      reward:
+        type: 2
+        value: 50
+        dungeonBuff:
+          mainBuffs: []
+          subBuffs: []
+        battleBuff:
+          mainBuffs: []
+          subBuffs: []
+          battleCount: 0
+        roomBuff:
+          mainBuffs: []
+          subBuffs: []
+          roomCount: 0
+      penalty:
+        type: 0
+        value: 0
+        mainBuff:
+          stat: 0
+          flat: 0
+          percent: 0
+        subBuff:
+          stat: 0
+          flat: 0
+          percent: 0
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 0
+      reward:
+        type: 0
+        value: 0
+        dungeonBuff:
+          mainBuffs: []
+          subBuffs: []
+        battleBuff:
+          mainBuffs: []
+          subBuffs: []
+          battleCount: 0
+        roomBuff:
+          mainBuffs: []
+          subBuffs: []
+          roomCount: 0
+      penalty:
+        type: 0
+        value: 0
+        mainBuff:
+          stat: 0
+          flat: 0
+          percent: 0
+        subBuff:
+          stat: 0
+          flat: 0
+          percent: 0
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000}
+            m_MethodName: StartFight
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  controllerPrefab: {fileID: 789382202016607290, guid: 7a1509ef333edf74fa05b87743121ddd,
+    type: 3}

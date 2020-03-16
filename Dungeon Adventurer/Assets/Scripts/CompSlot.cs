@@ -1,16 +1,22 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CompSlot : MonoBehaviour, IPointerClickHandler
 {
+    static readonly Color DefaultColor = Color.white;
+    static readonly Color FavPositionColor = new Color(0f, 1f, 0f, 1f);
+    static readonly Color AdvPositionColor = new Color(0f, 0.5f, 0f, 1f);
+    static readonly Color WorsePositionColor = new Color(0.5f, 0f, 0f, 1f);
+    static readonly Color BadPositionColor = new Color(1f, 0f, 0f, 1f);
 
-    [SerializeField] int position;
+    [SerializeField] Image backgroundImage;
 
-    Hero _appliedCharacter;
+    int _position;
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        var slot = BattleOrderView._instance.SlotSelected(position);
+        var slot = BattleOrderView._instance.SlotSelected(_position);
         if (slot != null)
         {
             CleanTransform();
@@ -22,17 +28,13 @@ public class CompSlot : MonoBehaviour, IPointerClickHandler
     {
         CleanTransform();
         slot.transform.SetParent(transform);
+        slot.transform.localScale = Vector3.one;
+        slot.GetComponent<Image>().enabled = false;
     }
-
 
     public void SetData(int pos)
     {
-        position = pos;
-    }
-
-    public void Refresh(Hero character)
-    {
-        _appliedCharacter = character;
+        _position = pos;
     }
 
     public void CleanTransform()
@@ -43,13 +45,33 @@ public class CompSlot : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public Hero GetCharacter()
-    {
-        return _appliedCharacter;
-    }
-
     public int GetPosition()
     {
-        return position;
+        return _position;
+    }
+
+    public void SetColor(int posSkills)
+    {
+        switch (posSkills)
+        {
+            case 0:
+                backgroundImage.color = BadPositionColor;
+                break;
+            case 1:
+                backgroundImage.color = WorsePositionColor;
+                break;
+            case 2:
+                backgroundImage.color = DefaultColor;
+                break;
+            case 3:
+                backgroundImage.color = AdvPositionColor;
+                break;
+            case 4:
+                backgroundImage.color = FavPositionColor;
+                break;
+            default:
+                backgroundImage.color = DefaultColor;
+                break;
+        }
     }
 }

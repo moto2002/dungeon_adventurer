@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class TimeLineEntry : MonoBehaviour
@@ -34,7 +35,6 @@ public class TimeLineEntry : MonoBehaviour
 
     public void Move(float xMove)
     {
-
         transform.localPosition = new Vector3(xMove, 0f);
     }
 }

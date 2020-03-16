@@ -19,6 +19,8 @@ namespace Lexic
 
         void Awake()
         {
+            Debug.Log("Init NameGenerator");
+
             if (rng == null)
                 rng = new System.Random();
 

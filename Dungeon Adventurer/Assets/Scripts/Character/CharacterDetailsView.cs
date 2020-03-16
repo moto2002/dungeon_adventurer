@@ -3,56 +3,54 @@ using UnityEngine;
 
 public class CharacterDetailsView : View
 {
-
-    [SerializeField]
-    TextMeshProUGUI _charName;
+    [SerializeField] TextMeshProUGUI _charName;
 
     //Strength
-    [SerializeField]
-    TextMeshProUGUI _physDmgAmount, _critPhysAmount;
+    [SerializeField] TextMeshProUGUI _physDmgAmount, _critPhysAmount;
 
     //Constitution
-    [SerializeField]
-    TextMeshProUGUI _hpAmount, _armorAmount;
+    [SerializeField] TextMeshProUGUI _hpAmount, _armorAmount;
 
     //Dexterity
-    [SerializeField]
-    TextMeshProUGUI _dodgeAmount, _speedAmount;
+    [SerializeField] TextMeshProUGUI _dodgeAmount, _speedAmount;
 
     //Intelligence
-    [SerializeField]
-    TextMeshProUGUI _magicDmgAmount, _magicCritAmount, _fireResAmount, _iceResAmount, _lightResAmount;
+    [SerializeField] TextMeshProUGUI _magicDmgAmount, _magicCritAmount, _fireResAmount, _iceResAmount, _lightResAmount;
 
     //Luck
-    [SerializeField]
-    private TextMeshProUGUI _critChanceAmount;
-    private CharacterController _controller;
+    [SerializeField] TextMeshProUGUI _critChanceAmount;
 
-    public override void OnControllerChanged(Controller newController)
+    static Hero _hero;
+
+    private void OnEnable()
     {
-        _controller = (CharacterController)newController;
         SetSubStats();
+        SetName();
     }
 
-    private void SetName()
+    public static void SetCharacter(Hero hero)
     {
-        _charName.text = _controller.attachedCharacter.name;
-
+        _hero = hero;
     }
 
-    private void SetSubStats()
+    void SetName()
     {
-        _physDmgAmount.text = _controller.attachedCharacter.sub.physDmg + "";
-        _critPhysAmount.text = _controller.attachedCharacter.sub.critDmg + "";
-        _hpAmount.text = _controller.attachedCharacter.sub.hp + "";
-        _armorAmount.text = _controller.attachedCharacter.sub.armor + "";
-        _dodgeAmount.text = _controller.attachedCharacter.sub.dodge + "";
-        _speedAmount.text = _controller.attachedCharacter.sub.speed + "";
-        _magicDmgAmount.text = _controller.attachedCharacter.sub.magicDmg + "";
-        _magicCritAmount.text = _controller.attachedCharacter.sub.critMagic + "";
-        _fireResAmount.text = _controller.attachedCharacter.sub.fireRes + "";
-        _iceResAmount.text = _controller.attachedCharacter.sub.iceRes + "";
-        _lightResAmount.text = _controller.attachedCharacter.sub.lightRes + "";
-        _critChanceAmount.text = _controller.attachedCharacter.sub.critChance + "";
+        _charName.text = _hero.displayName;
+    }
+
+    void SetSubStats()
+    {
+        _physDmgAmount.text = _hero.Sub.physDmg + "";
+        _critPhysAmount.text = _hero.Sub.critDmg + "";
+        _hpAmount.text = _hero.Sub.hp + "";
+        _armorAmount.text = _hero.Sub.armor + "";
+        _dodgeAmount.text = _hero.Sub.dodge + "";
+        _speedAmount.text = _hero.Sub.speed + "";
+        _magicDmgAmount.text = _hero.Sub.magicDmg + "";
+        _magicCritAmount.text = _hero.Sub.critMagic + "";
+        _fireResAmount.text = _hero.Sub.fireRes + "";
+        _iceResAmount.text = _hero.Sub.iceRes + "";
+        _lightResAmount.text = _hero.Sub.lightRes + "";
+        _critChanceAmount.text = _hero.Sub.critChance + "";
     }
 }

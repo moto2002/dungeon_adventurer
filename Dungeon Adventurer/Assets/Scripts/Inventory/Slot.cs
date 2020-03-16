@@ -17,6 +17,8 @@ public class Slot : MonoBehaviour, IDropHandler
         set
         {
             value.transform.SetParent(transform);
+            value.transform.localScale = Vector3.one;
+            value.transform.localPosition = Vector3.zero;
         }
     }
 

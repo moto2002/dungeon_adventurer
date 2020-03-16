@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9241b23de275354f8f8868a13e16656, type: 3}
+  m_Name: PitTrap
+  m_EditorClassIdentifier: 
+  optional: 0
+  mainDescription: 'As your group strolls through a dark hallway, one of the heroes
+    wanders off alone. In a sudden realisation _name_ finds himself in a spiked room. '
+  controllerPrefab: {fileID: 8877944612975419643, guid: d35d949e2ecefdc4aa91abe14f4c0480,
+    type: 3}
+  firstOption:
+    requirements: []
+    startText: Quickly move to safety
+    successRate:
+      stat: 2
+      minValue: 1
+      desiredValue: 65
+      successText: With light steps to safety.
+    normalResultText: One wrong step and balance was lost ... so was some health.
+    results:
+    - type: 2
+      reward:
+        type: 0
+        value: 0
+      penalty:
+        type: 0
+        value: 25
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+  secondOption:
+    requirements: []
+    startText: Figure out the pattern and layout
+    successRate:
+      stat: 3
+      minValue: 1
+      desiredValue: 75
+      successText: The keen eye can easily understand the pattern.
+    normalResultText: With no clue, the hero steps in almost every spike.
+    results:
+    - type: 2
+      reward:
+        type: 0
+        value: 0
+      penalty:
+        type: 0
+        value: 30
+      action:
+        m_PersistentCalls:
+          m_Calls: []

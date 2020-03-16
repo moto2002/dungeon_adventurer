@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu (fileName = "New SingleTarget", menuName = "Skill/Effect/SingleTarget")]
 public class SingleTarget : Target {
 	public bool targetSelf;
 

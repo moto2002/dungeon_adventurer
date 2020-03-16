@@ -5,5 +5,5 @@ public class CharacterCreationData: ScriptableObject
 {
     public Rarity rarity;
     public int startingPoints;
-    public float[] growth;
+    public int levelPoints;
 }

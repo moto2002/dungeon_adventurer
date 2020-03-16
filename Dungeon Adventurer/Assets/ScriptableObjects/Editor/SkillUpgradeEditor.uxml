@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Label text="Skills Editor" name="Title" style="-unity-text-align: middle-center; font-size: 36px; -unity-font: resource('Fonts/Fonts/duality'); color: rgb(128, 40, 40); -unity-font-style: bold; height: 58px;">
+        <Style src="SkillsEditor.uss" />
+        <ui:Button text="Back" name="BackButton" style="height: 35px; width: 45px; -unity-font-style: normal; display: none;" />
+        <ui:Button text="Back" name="BackToSkillsButton" style="height: 35px; width: 45px; -unity-font-style: normal; display: none;" />
+        <ui:Button text="Remove" name="RemoveSkillButton" style="height: 35px; width: 45px; -unity-font-style: normal; display: none;" />
+    </ui:Label>
+    <ui:VisualElement name="CollectionContainer" style="flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: flex-start; height: 450px; display: none;">
+    </ui:VisualElement>
+    <ui:VisualElement name="SpellsContainer" style="height: 400px; flex-wrap: wrap; flex-direction: row; align-items: flex-start; display: none;">
+    </ui:VisualElement>
+    <ui:VisualElement name="ItemInfo" class="Container" style="display: none; flex-wrap: wrap; flex-direction: row;">
+        <Style src="SkillsEditor.uss" />
+        <ui:Image name="ItemPreview" style="height: 81px; width: 77px;" />
+    </ui:VisualElement>
+</ui:UXML>

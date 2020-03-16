@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a776bad584fd410489d5c725ff71ba84, type: 3}
+  m_Name: Lasting Tinkture
+  m_EditorClassIdentifier: 
+  id: 4
+  displayName: Lasting Tinkture
+  cooldown: 3
+  manaCost: 0
+  isPassive: 0
+  icon: {fileID: 21300000, guid: 49c5be4265e45964c9bf9506e09d416c, type: 3}
+  description: 
+  targetType: 0
+  targetSite: 1
+  targetCount: 1
+  upgrades:
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  - level: 0
+    cooldown: 0
+    manaCost: 0
+    description: 
+    targetType: 0
+    targetSite: 0
+    targetCount: 0
+    possiblePositions: 000000000000000000
+    possibleTargets: 000000000000000000
+  possiblePositions: 000000000101000000
+  possibleTargets: 000000010101000000
+  SkillEffects:
+  - effect: {fileID: 7804223641334896291}
+  RemainingCooldown: 0
+--- !u!114 &7804223641334896291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 089fd3d02e107ec4998d77696a1d25ef, type: 3}
+  m_Name: IncreaseTurnCount
+  m_EditorClassIdentifier: Assembly-CSharp::IncreaseTurnCount
+  value: 2
+  affectedType: 0
+  upgrades:
+  - level: 0
+    value: 0
+    affectedType: 0
+  - level: 0
+    value: 0
+    affectedType: 0
+  - level: 0
+    value: 0
+    affectedType: 0
+  - level: 0
+    value: 0
+    affectedType: 0
+  - level: 0
+    value: 0
+    affectedType: 0
+  - level: 0
+    value: 0
+    affectedType: 0
+  - level: 0
+    value: 0
+    affectedType: 0
+  - level: 0
+    value: 0
+    affectedType: 0
+  - level: 0
+    value: 0
+    affectedType: 0
+  - level: 0
+    value: 0
+    affectedType: 0

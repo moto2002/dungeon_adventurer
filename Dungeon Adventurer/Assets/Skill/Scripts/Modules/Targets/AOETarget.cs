@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu (fileName = "New AOETarget", menuName = "Skill/Effect/AOETarget")]
 public class AOETarget : Target {
 	public enum TargetOrigin {
 		Unit,

@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 729000fdd40a8f442b8ed1fad0fd34ee, type: 3}
   m_Name: DefaultApplyMarker
   m_EditorClassIdentifier: 
+  test: 0
+  test1: 0
+  test2: 0
   markerCount: 0
   turnCount: 0
   type: 0

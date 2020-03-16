@@ -1,41 +1,47 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
+using DG.Tweening;
+using RSG;
+using UnityEngine.SceneManagement;
 
-public abstract class View : MonoBehaviour {
-
-    public string _sceneName;
+public abstract class View : EventListener
+{
+    const float ShowTime = 0.5f;
+    const float HideTime = 0.2f;
     public Animator _animator;
+    const string ShowClip = "Show";
+    const string HideClip = "Hide";
+
+    [SerializeField] bool shouldBeSetActive;
     public GameObject content;
 
-    private Controller _controller;
-    public Controller Controller {
-        get { return _controller; }
-        set
+    public IPromise Hide()
+    {
+        if (!gameObject.activeInHierarchy)
         {
-            _controller = value;
-            OnControllerChanged(value);
+            Debug.LogWarning($"Tried to hide inactive Scene of type {name}. You should show it first!");
         }
-    }
-    public virtual void AfterShow() {
+
+        content.SetActive(false);
+        gameObject.SetActive(false);
+        return Promise.Resolved();
     }
 
-    public virtual void OnControllerChanged(Controller newController) {
-        Debug.Log("here");
+    public virtual void AfterShow()
+    {
     }
 
-    public void Show() {
+    public virtual IPromise Show()
+    {
+        gameObject.SetActive(true);
+        //content.transform.localPosition = new Vector3(2000, 0, 0);
         content.SetActive(true);
-        _animator.SetBool("Active", true);
-        AfterShow();
-    }
+        //content.transform.DOLocalMoveX(0, ShowTime);
 
-    public virtual void Close() {
-        _animator.SetTrigger("Hide");
-        StartCoroutine(HideView());
-    }
+        if (shouldBeSetActive)
+        {
+            SceneManager.SetActiveScene(gameObject.scene);
+        }
 
-    IEnumerator HideView() {
-        yield return new WaitUntil(() => !_animator.GetBool("Visible"));
-        UIManager._instance.RemoveScene(_sceneName);
+        return Promise.Resolved().Then(() => AfterShow());
     }
 }

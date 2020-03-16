@@ -72,7 +72,7 @@ namespace BayatGames.SaveGameFree
         private static Encoding m_Encoding = Encoding.UTF8;
         private static bool m_Encode = false;
         private static SaveGamePath m_SavePath = SaveGamePath.PersistentDataPath;
-        private static string m_EncodePassword = "Lkwo#13JeoskW1";
+        private static string m_EncodePassword = "h@e#ll$o%^";
         private static bool m_LogError = false;
 
         /// <summary>

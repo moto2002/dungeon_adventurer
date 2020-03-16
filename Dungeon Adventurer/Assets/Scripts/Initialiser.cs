@@ -4,33 +4,19 @@ using UnityEngine;
 
 public class Initialiser : MonoBehaviour
 {
-    private CharacterData _characterData;
-
-    [SerializeField] TextAsset json;
-
-    void Awake()
+    void Start()
     {
-        RaceData racesData = LoadJson<RaceData>("races.json");
-    }
+        Debug.LogWarning("RRRR Init");
+        ServiceRegistry.Init();
 
-    public void ShowShopView()
-    {
-        SceneManagement._manager.ShowShopView();
-    }
+        var init = PlayerPrefs.GetInt("Init");
+        if (init == 0)
+        {
+            ServiceRegistry.Currency.CreditCurrency(Currency.Coins, 100000);
+            PlayerPrefs.SetInt("Init", 1);
+        }
 
-    public void ShowInventoryView()
-    {
-        SceneManagement._manager.ShowInventoryView();
-    }
-
-    public void ShowSmithView()
-    {
-        SceneManagement._manager.ShowSmithView();
-    }
-
-    public void ShowTaverneView()
-    {
-        SceneManagement._manager.ShowTaverneView();
+        SceneManagement._manager.ShowStart();
     }
 
     private T LoadJson<T>(string jsonPath)

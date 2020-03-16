@@ -2,4 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Module : ScriptableObject {}
+[System.Serializable]
+public abstract class Module : ScriptableObject {
+
+    public int Test = 2;
+
+}

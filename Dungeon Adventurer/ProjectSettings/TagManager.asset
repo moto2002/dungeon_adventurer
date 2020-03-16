@@ -4,7 +4,29 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Overview
+  - target
+  - ground
+  - symbol_O
+  - stone
+  - pyramid
+  - agent
+  - ball
+  - iWall
+  - pit
+  - symbol_O_Goal
+  - symbol_X
+  - wall
+  - symbol_X_Goal
+  - goal
+  - block
+  - walkableSurface
+  - purpleAgent
+  - purpleGoal
+  - blueAgent
+  - blueGoal
+  - switchOff
+  - badFood
+  - food
   layers:
   - Default
   - TransparentFX
@@ -41,7 +63,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Character
-    uniqueID: 4269000361
     locked: 0

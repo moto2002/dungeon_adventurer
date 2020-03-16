@@ -1,60 +1,65 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using UnityEngine.UI;
 
-public class CharactersView : View
+public class CharactersView : View, CharactersService.OnCharactersChanged, InventoryService.OnInventoryChanged
 {
-    private CharactersController _controller;
-
-    [SerializeField] CharacterStatsView _statsView;
-    [SerializeField] GameObject _characterIconPrefab;
-    [SerializeField] Transform _scrollContent;
-    [SerializeField] Sprite[] _icons;
-    [SerializeField] GameObject characterOverview;
+    [Header("Controller")]
     [SerializeField] InventoryView inventoryView;
 
-    public override void OnControllerChanged(Controller newController)
+    [Header("Buttons")]
+
+    [SerializeField] Button closeButton;
+
+    [SerializeField] CharacterNavigation navigation;
+    [SerializeField] List<ACharacterNavigationEntry> navigationEntries;
+    [SerializeField] CharInfoController charInfoController;
+
+    Hero _currentHero;
+
+    protected override void Awake()
     {
-        _controller = (CharactersController) newController;
-        _statsView.Controller = new CharacterController (_controller._model.characters[0]);
-        inventoryView.SetData(DataHolder._data.InventoryItems);
-        MakeCharacterIcons();
+        closeButton.onClick.AddListener(() => ViewUtility.ShowThenHide<CharacterOverviewView, CharactersView>());
+        navigation.SetData(navigationEntries, navigationEntries[0]);
+        charInfoController.SetData(OnHeroChanged);
     }
 
-    public void ChangeCharacter(int id)
+    void OnHeroChanged(Hero hero)
     {
-        _statsView.Controller = new CharacterController(_controller.ChangeCharacterView(id));
+        _currentHero = hero;
+        navigationEntries.ForEach(entry => entry.RefreshHero(_currentHero));
+        charInfoController.RefreshHero(_currentHero);
+        inventoryView.Refresh(_currentHero);
     }
 
-    private void MakeCharacterIcons()
+    public void SetCurrentHero(Hero hero)
     {
-        for (int i = 0; i < _controller._model.characters.Length; i++)
+        OnHeroChanged(hero);
+    }
+
+    public void OnModelChanged(CharactersModel model)
+    {
+        charInfoController.RefreshHeroesModel(model);
+
+        var hero = _currentHero != null ? model.Characters.FirstOrDefault(c => c.id == _currentHero.id) : null;
+        if (hero == null)
         {
-            Hero c = _controller._model.characters[i];
-            Transform g = (Instantiate(_characterIconPrefab) as GameObject).transform;
-            g.SetParent(_scrollContent);
-            g.localPosition = Vector3.zero;
-            g.GetChild(0).GetComponent<Image>().sprite = DataHolder._data.raceImages[(int)c.race];
-            g.GetChild(1).GetComponent<Image>().color = new Color(1.0f, 0.0f, 0.0f, 1.0f);
-            AddFunctionToButton(g.GetComponent<Button>(), i);
+            if (model.Characters.Length > 0)
+            {
+                hero = model.Characters[0];
+            }
+            else
+            {
+                ViewUtility.HideThenShow<CharactersView, CharacterOverviewView>();
+                return;
+            }
         }
+        OnHeroChanged(hero);
     }
 
-    public override void Close()
+    public void OnModelChanged(InventoryModel model)
     {
-        Debug.Log("herer");
-        //UIManager._instance.CloseScene("View_Details");
-        base.Close();
+        inventoryView.RefreshInventory(model);
     }
-
-    void CloseCharacterOverview()
-    {
-        characterOverview.SetActive(false);
-    }
-
-    private void AddFunctionToButton(Button b, int id)
-    {
-        b.onClick.AddListener(delegate { ChangeCharacter(id); CloseCharacterOverview(); });
-    }
-
-
 }

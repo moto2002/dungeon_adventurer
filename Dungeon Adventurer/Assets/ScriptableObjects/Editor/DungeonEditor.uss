@@ -1,0 +1,73 @@
+.CollectionButton {
+    height: 36px;
+    font-size: 18px;
+    -unity-font-style: italic;
+    color: rgb(103, 55, 55);
+    width: 128px;
+}
+
+.MonsterButton {
+    -unity-font-style: italic;
+    background-color: rgb(207, 173, 91);
+    width: 100px;
+    align-items: center;
+}
+
+.BossButton {
+    -unity-font-style: italic;
+    background-color: rgb(207, 50, 50);
+    width: 100px;
+    align-items: center;
+}
+
+.SkillButtonTitle {
+    white-space: normal;
+    font-size: 15px;
+}
+
+.SkillButtonIcon {
+    -unity-background-scale-mode: stretch-to-fill;
+    height: 78px;
+    width: 78px;
+}
+
+.Container {
+    width: 635px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(207, 173, 91);
+    align-items: stretch;
+}
+
+.MonsterTypeTitle {
+    white-space: normal;
+    font-size: 24px;
+    color: rgb(50, 50, 50);
+    margin-left: 10px;
+    -unity-font: resource('Fonts/Fonts/duality');
+}
+
+#RemoveSkillButton {
+    margin-left: 420px;
+    margin-top: -25px;
+    background-color: rgb(150,0,0);
+    color: rgb(255, 255, 255);
+}
+
+#messageText {
+    flex-direction: column;
+    height: 100px;
+    width: 200px;
+    margin-left: 2.5px;
+}
+     
+#messageText TextInput {
+    height: 100px;
+    width: 200px;
+    -unity-text-align: upper-left;  
+    -unity-font-style: normal;
+    white-space: normal;
+    margin-right: 1px;
+}
+
+

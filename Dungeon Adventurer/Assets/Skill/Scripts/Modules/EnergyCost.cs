@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu (fileName = "New EnergyCost", menuName = "Skill/Effect/EnergyCost")]
 public class EnergyCost : Cost {
 	public float energyDrain;
 

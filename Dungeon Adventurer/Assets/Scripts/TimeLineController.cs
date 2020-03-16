@@ -2,7 +2,8 @@
 using System.Linq;
 using UnityEngine;
 
-public class TimeLineController : MonoBehaviour {
+public class TimeLineController : MonoBehaviour
+{
     [SerializeField] TimeLineEntry prefabEnemyEntry;
     [SerializeField] TimeLineEntry prefabPlayerEntry;
 
@@ -15,34 +16,50 @@ public class TimeLineController : MonoBehaviour {
     float xPerSpeed = 0f;
     public static TimeLineController controller;
 
-    public void SetData(Hero[] characters, Monster[] monsters) {
+    public void SetData(Hero[] characters, Monster[] monsters)
+    {
         controller = this;
         var entries = new List<TimeLineEntry>();
+        _entries.Clear();
+        ClearEntries();
 
-        foreach (var character in characters) {
+        foreach (var character in characters)
+        {
             var entry = Instantiate(prefabPlayerEntry, container);
-            entry.SetData(DataHolder._data.raceImages[(int)character.race], character.id, character.sub.speed);
+            entry.SetData(DataHolder._data.raceImages[(int)character.race], character.id, character.Sub.speed);
             entry.ResetPosition();
             entries.Add(entry);
             character.OnCharacterDeath.AddListener(RemoveEntry);
         }
 
-        foreach (var monster in monsters) {
+        foreach (var monster in monsters)
+        {
             var entry = Instantiate(prefabEnemyEntry, container);
-            entry.SetData(monster.icon, monster.id, monster.sub.speed);
+            entry.SetData(monster.icon, monster.id, monster.Sub.speed);
             entry.ResetPosition();
             entries.Add(entry);
             monster.OnCharacterDeath.AddListener(RemoveEntry);
         }
         entries = entries.OrderByDescending(e => e.Speed).ToList();
 
-        foreach (var entry in entries) {
+        foreach (var entry in entries)
+        {
             _entries.Enqueue(entry);
         }
         SetPosition();
     }
 
-    void SetPosition() {
+    void ClearEntries()
+    {
+        if (container.childCount == 0) return;
+        foreach (Transform entry in container)
+        {
+            Destroy(entry.gameObject);
+        }
+    }
+
+    void SetPosition()
+    {
         /*var dif = 0;
         for (int i = 1; i < _entries.Count; i++)
         {
@@ -65,24 +82,37 @@ public class TimeLineController : MonoBehaviour {
         */
         xPerSpeed = TIMELINE_LENGTH / (_entries.Count - 1);
 
-        for (int i = 0; i < _entries.Count; i++) {
+        for (int i = 0; i < _entries.Count; i++)
+        {
             _entries.ElementAt(i).Move(xPerSpeed * i);
         }
     }
 
-    public int FirstEntry() {
+    public int FirstEntry()
+    {
         return _entries.First().Id;
     }
 
-    public int NextTurn() {
+    public int NextTurn()
+    {
         var entry = _entries.Dequeue();
         _entries.Enqueue(entry);
         SetPosition();
         return _entries.First().Id;
     }
 
+    public void AddEntry(Monster monster)
+    {
+        var entry = Instantiate(prefabEnemyEntry, container);
+        entry.SetData(monster.icon, monster.id, monster.Sub.speed);
+        entry.ResetPosition();
+        _entries.Enqueue(entry);
+        monster.OnCharacterDeath.AddListener(RemoveEntry);
+        SetPosition();
+    }
 
-    void RemoveEntry(int id) {
+    void RemoveEntry(int id)
+    {
         var list = _entries.ToList();
         var entry = _entries.FirstOrDefault(e => e.Id == id);
         list.Remove(entry);

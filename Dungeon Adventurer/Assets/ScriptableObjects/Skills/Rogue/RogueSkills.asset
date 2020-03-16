@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c30ce02eca3089f42bf970f67c8ae467, type: 3}
+  m_Name: RogueSkills
+  m_EditorClassIdentifier: 
+  fightClass: 12
+  skills:
+  - {fileID: 11400000, guid: dc879d7911b58964b85afaef1ac6cbbc, type: 2}
+  - {fileID: 11400000, guid: 3dcc7e9321b9e914fb2a43a3f15be975, type: 2}
+  - {fileID: 11400000, guid: b25188f3b12684140aa0fe905a6ff541, type: 2}
+  - {fileID: 11400000, guid: 39c5245b6d4adca49b052a595ff84a40, type: 2}
